@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #B8E986;
+    --secondary-color: #F9F9F9;
+    --text-color: #333;
+    --font-family: 'Arial', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    position: sticky; /* allows for divider to work */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.header-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* CSS styling for custom divider TOP */
+.custom-shape-divider-top-1744645115 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1744645115 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1744645115 .shape-fill {
+    fill: #B8E986;
+}
+
+.hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    position: relative; /* allows for divider to work */
+    bottom: 0;
+}
+
+/* CSS styling for custom divider BOTTOM */
+.custom-shape-divider-bottom-1744645278 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1744645278 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1744645278 .shape-fill {
+    fill: #B8E986;
+}
