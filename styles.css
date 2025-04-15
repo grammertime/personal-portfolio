@@ -2,7 +2,27 @@
     --primary-color: #B8E986;
     --secondary-color: #F9F9F9;
     --text-color: #333;
-    --font-family: 'Arial', sans-serif;
+    --font-family: 'Playfair Display', serif;
+    --bubble-color-default: rgba(200, 220, 235, 0.4);
+    --bubble-color-none: rgba(200, 220, 235, 0);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLightly {
+    0% {
+        background-color: var(--bubble-color-none);
+    }
+    100% {
+        background-color: var(--bubble-color-default);
+    }
 }
 
 * {
@@ -12,31 +32,29 @@
     font-family: var(--font-family);
 }
 
-body {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    line-height: 1.6;
-}
-
-header {
-    position: sticky; /* allows for divider to work */
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-}
-
-.header-link {
-    text-decoration: none;
+h1 {
+    font-size: 2.5rem;
     color: var(--text-color);
     font-weight: bold;
 }
 
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    height: 100vh;
+    width: 100vw;
+    /* overflow: hidden; */
+}
+
+header {
+    position: relative; /* allows for divider to work */
+    height: 14.25rem;
+    background-color: var(--secondary-color);
+}
+
 /* CSS styling for custom divider TOP */
-.custom-shape-divider-top-1744645115 {
+.custom-shape-divider-top-1744673208 {
     position: absolute;
     top: 0;
     left: 0;
@@ -45,15 +63,92 @@ nav {
     line-height: 0;
 }
 
-.custom-shape-divider-top-1744645115 svg {
+.custom-shape-divider-top-1744673208 svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
+    width: calc(148% + 1.3px);
     height: 150px;
 }
 
-.custom-shape-divider-top-1744645115 .shape-fill {
+.custom-shape-divider-top-1744673208 .shape-fill {
     fill: #B8E986;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+    background-color: var(--secondary-color);
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    padding: 1rem 2rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.nav-wrapper-left {
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 42rem;
+}
+
+.header-bubble {
+    background-color: var(--bubble-color-none);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    transition: background-color 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.header-bubble:hover {
+    background-color: var(--bubble-color-default);
+}
+
+.header-link-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 10rem;
+    color: var(--text-color);
+    font-weight: bold;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.hero-wrapper {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
 }
 
 .hero-section {
@@ -62,15 +157,63 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.nav-wrapper-right {
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 42rem;
+}
+
+.header-link-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 10rem;
+    color: var(--text-color);
+    font-weight: bold;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.header-bubble-right {
+    background-color: var(--bubble-color-none);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.header-bubble-right:hover {
+    background-color: var(--bubble-color-default);
 }
 
 footer {
     position: relative; /* allows for divider to work */
-    bottom: 0;
+    height: 14.25rem;
+    background-color: var(--secondary-color);
 }
 
 /* CSS styling for custom divider BOTTOM */
-.custom-shape-divider-bottom-1744645278 {
+.custom-shape-divider-bottom-1744673241 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -80,13 +223,13 @@ footer {
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1744645278 svg {
+.custom-shape-divider-bottom-1744673241 svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
+    width: calc(148% + 1.3px);
     height: 150px;
 }
 
-.custom-shape-divider-bottom-1744645278 .shape-fill {
+.custom-shape-divider-bottom-1744673241 .shape-fill {
     fill: #B8E986;
 }
