@@ -330,6 +330,12 @@ nav {
     align-items: center;
     justify-content: center;
     animation: fadeIn 2s ease-in-out;
+    text-align: center;
+    width: 70%;
+}
+
+ul {
+    text-align: center;
 }
 
 .nav-wrapper-right {
