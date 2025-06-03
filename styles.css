@@ -365,8 +365,12 @@ nav {
     animation: fadeInLightly 1s ease-in-out;
 }
 
+.gallery-container iframe {
+    border-radius: 10px;
+}
+
 .gallery-container img {
-    max-width: 50%;
+    max-width: 35%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
