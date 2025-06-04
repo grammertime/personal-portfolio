@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f0fe386a48.js" crossorigin="anonymous"></script>
 </head>
 <body class="puff-in-center">
     <header>
@@ -28,7 +31,7 @@
             <nav class="nav-left">
                 <div class="header-bubble slide-in-left-three"><a class="header-link-left header-link" href="./sites/resume.html">My Resume</a></div>
                 <div class="header-bubble slide-in-left-two"><a class="header-link-left header-link" href="./sites/project-gallery.html">Project Gallery</a></div>
-                <div class="header-bubble slide-in-left-one"><a class="header-link-left header-link" href="./sites/about-me.html">Who Am I?</a></div>
+                <div class="header-bubble slide-in-left-one"><a class="header-link-left header-link" href="#who-am-i-card">Who Am I?</a></div>
             </nav>
         </div>
 
@@ -49,8 +52,8 @@
         </div>
     </main>
 
-    <footer>
-        <!-- Bottom custom divider -->
+    <!-- Bottom custom divider -->
+    <section class="bottom-divider">
         <div class="custom-shape-divider-bottom-1744673241">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -58,11 +61,44 @@
                 <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
             </svg>
         </div>
+    </section>
+
+    <!-- Making a scroll symbol that will fade as the user scrolls beneath the bottom divider -->
+    <div class="scroll-symbol-container">
+        <div class="scroll-symbol">
+            <i class="fa-solid fa-chevron-down" id="scroll-symbol"></i>
+        </div>
+    </div>
+
+    <section class="card-section">
+        <div class="card-section-grid">
+            <div class="card" id="who-am-i-card">
+                <h2>Who Am I?</h2>
+                <p>Learning and self-development is what makes me tick. During my over three years at Brigham Young University as a pre-Finance and now a pre-Information Systems major, I have learned the importance of hard work, motivation, and versatility in today's world. I bring a balance of high achieving and connection that fuels me to accomplish more. My passions include web development, computer programming, and artifical intelligence, and I am eager to learn more.</p>
+            </div>
+            <div class="card" id="marathon-card">
+                <img src="./images/IMG_6896.jpeg" alt="Marathon Finish Line">
+            </div>
+            <div class="card" id="girlfriend-card">
+                <img src="./images/IMG_3645.jpeg" alt="Graham and Gracie">
+            </div>
+            <div></div>
+        </div>
+        
+    </section>
+
+    <footer>
     </footer>
+
+    <script src="functions.js"></script>
+
 </body>
+
 </html>
 
-<!-- For the next part of my project I want to involve some sort of image as a background to my homepage. I want this to look a bit more professional and personal so hopefully a headshot of mine that I like.
-Next part I want to try to do is combine a few of the links on the sides of the homepage, since I really only need four navigation links for the user to click on. Idea is to combine project gallery with who am i or who am i with other hobbies, and social links with connect with me. Also i probably won't have a ton of projects to show in project gallery which is fine.
+<!-- 
+Next part I want to try to do is combine a few of the links on the sides of the homepage, since I really only need four navigation links for the user to click on. Idea is to combine project gallery with who am i or who am i with other hobbies, and social links with connect with me.
 Note to self to include a skills section in the my resume page. Look at kearl's portfolio for ideas, his is super clean and sleek. i almost want to revamp my entire page to be more simple like his is.
-Ideas for other nav links is to make the entire background the lightest green of the header/footer i can, that way I don't have to do the animation for each of the nav links or at least I can make it a little smoother. -->
+Ideas for other nav links is to make the entire background the lightest green of the header/footer i can, that way I don't have to do the animation for each of the nav links or at least I can make it a little smoother. 
+
+6.3.2025 I have been working on trying to make the scroll.symbol fade as you scroll down into the card-section with no success. It's seriously frustrating, I'm thinking it could have something to do with using a symbol from FA. Maybe try an image or something using the code i have in functions.js next time to see if that works or maybe I'm integrating my js code wrong. Beyond this, everything is coming along. Thinking of eliminating the animation for the cards as you scroll down, but it makes it a bit more interactive which I like. Just not totally minimalist like the hero section feels.-->
