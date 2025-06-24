@@ -30,8 +30,7 @@
     <main>
         <div class="nav-wrapper-left">
             <nav class="nav-left">
-                <div class="header-bubble slide-in-left-three"><a class="header-link-left header-link" href="./sites/resume.html">My Resume</a></div>
-                <div class="header-bubble slide-in-left-two"><a class="header-link-left header-link" href="#projects-card">Project Gallery</a></div>
+                <div class="header-bubble slide-in-left-two"><a class="header-link-left header-link" href="#why-me-card">My Resume</a></div>
                 <div class="header-bubble slide-in-left-one"><a class="header-link-left header-link" href="#who-am-i-card">Who Am I?</a></div>
             </nav>
         </div>
@@ -40,15 +39,14 @@
             <section class="hero-section">
                 <div class="profile-picture-container"><img src="./images/profile-pic.jpeg" alt="Profile Picture"></div>
                 <h1>Hi, I'm Graham!</h1>
-                <p>I am an Information Systems student at BYU dedicated to making my dreams a reality.</p>
+                <p>I am a pre-Information Systems student at BYU dedicated to making my dreams a reality.</p>
             </section>
         </div>
 
         <div class="nav-wrapper-right">
             <nav class="nav-right">
-                <div class="header-bubble slide-in-right-one"><a class="header-link-right header-link" href="./sites/hobbies.html">Other Hobbies</a></div>
-                <div class="header-bubble slide-in-right-two"><a class="header-link-right header-link" href="./sites/socials.html">Social Links</a></div>
-                <div class="header-bubble slide-in-right-three"><a class="header-link-right header-link" href="./sites/contact-me.html">Connect With Me</a></div>
+                <div class="header-bubble slide-in-right-one"><a class="header-link-right header-link" href="./sites/socials.html">Social Links</a></div>
+                <div class="header-bubble slide-in-right-two"><a class="header-link-right header-link" href="#contact-section">Connect With Me</a></div>
             </nav>
         </div>
     </main>
@@ -73,67 +71,79 @@
 
     <section class="card-section">
         <div class="card-section-grid">
+
             <!-- Who am i section -->
             <div class="card" id="who-am-i-card">
                 <h2>Who Am I?</h2>
+            </div>
+            <div class="card" id="who-am-i-content">
                 <p>Learning and self-development is what makes me tick. During my over three years at Brigham Young University as a pre-Finance and now a pre-Information Systems major, I have learned the importance of hard work, motivation, and versatility in today's world. I bring a balance of high achieving and connection that fuels me to accomplish more. My passions include web development, computer programming, and artifical intelligence, and I am eager to learn more.</p>
             </div>
-            <div class="card" id="girlfriend-card">
-                <div><img src="./images/gracie-and-i.jpeg" alt="Graham and Gracie"></div>
+
+            <!-- Why me section -->
+            <div class="card" id="why-me-card">
+                <h2>Why Me?</h2>
             </div>
+            <div class="card" id="why-me-content">
+                <p>My unique combination of skills, experiences, and passion for technology makes me a strong candidate for any opportunity. I am committed to continuous learning and growth, and I thrive in collaborative environments where I can contribute to innovative projects. My current position as a supervisor with the Operations team at BYU's Office of Information Technology has honed my leadership and problem-solving skills, and I have grown in understanding of artificial intelligence as an LLM Developer at DataAnnotation. These unique roles combined with my continuing education at BYU serve as a catalyst for my growth and development.</p>
+            </div>
+
             <!-- Projects section -->
             <div class="card" id="projects-card">
-                <h2>Projects</h2>
-                <p>Here are some of the front-end development projects I've worked on:</p>
+                <h2>My Projects</h2>
             </div>
-            <!-- <div class="card" id="marathon-card">
-                <img src="./images/IMG_6896.jpeg" alt="Marathon Finish Line">
-            </div>
-            <div class="card" id="piano-card">
-                <iframe width="450" height="265" src="https://www.youtube.com/embed/7NdxWbaRpew?si=YZmD-2TUlFGzxz8z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div> -->
             <div class="card" id="haribo-card">
-                <img src="./images/haribo-site.png" alt="Haribo Website Screenshot">
-                <p><a href="https://grammertime.github.io/Project-2/">Haribo Product Page</a></p>
+                <a href="https://grammertime.github.io/Project-2/">
+                    <img src="./images/haribo-site.png" alt="Haribo Website Screenshot">
+                    <p>Haribo Product Page</p>
+                </a>
             </div>
             <div class="card" id="sports-cards-card">
-                <img src="./images/sports-cards-site.png" alt="Sports Cards Plus">
-                <p><a href="https://ethanhousley1.github.io/Project3/">Sports Cards API Page</a></p>
+                <a href="https://ethanhousley1.github.io/Project3/">
+                    <img src="./images/sports-cards-site.png" alt="Sports Cards Plus">
+                    <p>Sports Cards API Page</p>
+                </a>
             </div>
 
             <!-- Skills Section -->
-            <div class="scroller scroller-top">
-                <ul class="tag-list scroller__inner" data-direction="left">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Pandas</li>
-                    <li>Python</li>
-                    <li>Animation</li>
-                    <li>MySQL</li>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                    <li>VBA Excel</li>
-                </ul>
+            <div class="scroller scroller-top" data-direction="left">
+                <div class="img-list scroller__inner">
+                    <img src="./images/css-logo.png" alt="CSS Logo">
+                    <img src="./images/js-logo.png" alt="JavaScript Logo">
+                    <img src="./images/html-logo.png" alt="HTML Logo">
+                    <img src="./images/pandas-logo.png" alt="Pandas Logo">
+                    <img src="./images/python-logo.png" alt="Python Logo">
+                    <img src="./images/servicenow-logo.png" alt="ServiceNow Logo">
+                    <img src="./images/scrum-logo.png" alt="Scrum Logo">
+                </div>
             </div>
             <div class="scroller scroller-bottom" data-direction="right">
-                <ul class="tag-list scroller__inner">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Pandas</li>
-                    <li>Python</li>
-                    <li>Animation</li>
-                    <li>MySQL</li>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                    <li>VBA Excel</li>
-                </ul>
+                <div class="img-list scroller__inner">
+                    <img src="./images/excel-logo.png" alt="Excel Logo">
+                    <img src="./images/mysql-logo.png" alt="MySQL Logo">
+                    <img src="./images/git-logo.png" alt="Git Logo">
+                    <img src="./images/github-logo.png" alt="GitHub Logo">
+                    <img src="./images/tableau-logo.png" alt="Tableau Logo">
+                    <img src="./images/brightspot-logo.png" alt="Brightspot Logo">
+                </div>
             </div>
         </div>
-        
+    </section>
+
+    <section class="contact-section" id="contact-section">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="mailto:grahamfawson@gmail.com" method="POST" enctype="text/plain">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="name" required>
+
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="email" required>
+
+            <label for="contact-message">Message:</label>
+            <textarea id="contact-message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
     </section>
 
     <footer>
