@@ -783,52 +783,6 @@ footer {
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
-    /* shrink profile picture container a bit to allow for more space */
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-    /* shrink profile picture container a bit to allow for more space */
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-    .profile-picture-container {
-        width: 10rem;
-        height: 10rem;
-    }
-
-        .card-section-grid {
-        grid-template-columns: repeat(auto-fill, minmax(2, 1fr));
-        grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
-        align-items: center;
-        justify-content: center;
-        border: 1px solid red;
-    }
-
-    #who-am-i-card {
-        grid-area: 1 / 1 / 2 / 3;
-    }
-
-    #who-am-i-content {
-        grid-area: 2 / 1 / 3 / 3;
-    }
-    #who-am-i-content-2 {
-        grid-area: 3 / 1 / 4 / 3;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-
-    .header-bubble,
-    .header-bubble-right {
-        width: 7rem;
-        height: 7rem;
-    }
-}
-
 @media only screen and (max-width: 1500px) {
     .profile-picture-container {
         width: 12rem;
@@ -844,5 +798,244 @@ footer {
     .header-bubble-right {
         width: 10rem;
         height: 10rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .header-bubble,
+    .header-bubble-right {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    header {
+        height: 10rem;
+    }
+
+    .card-section-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    #who-am-i-card {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    #who-am-i-content {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    #who-am-i-content-2 {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+
+    #gracie-and-i-card {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    #why-me-card {
+        grid-area: 4 / 2 / 5 / 3;
+    }
+
+    #why-me-content {
+        grid-area: 5 / 1 / 6 / 3;
+    }
+
+    .scroller-top {
+        grid-area: 6 / 1 / 7 / 3;
+    }
+
+    .scroller-bottom {
+        grid-area: 7 / 1 / 8 / 3;
+    }
+
+    #projects-card {
+        grid-area: 8 / 1 / 9 / 3;
+    }
+
+    #haribo-card {
+        grid-area: 9 / 1 / 10 / 3;
+    }
+
+    #sports-cards-card {
+        grid-area: 10 / 1 / 11 / 3;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    header {
+        height: 10rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    header {
+        height: 10rem;
+    }
+
+    .hero-wrapper {
+        width: 30rem;
+
+        p {
+            display: none;
+        }
+    }
+
+    .nav-right {
+        width: 12rem;
+    }
+
+    .card-section-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    /* shrink profile picture container a bit to allow for more space */
+
+    .nav-wrapper-right,
+    .nav-wrapper-left {
+        display: none;
+    }
+
+    .hero-wrapper {
+        height: 30rem;
+    }
+
+    .hero-section {
+        gap: 0rem;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+            
+        p {
+            display: none;
+        }
+    }
+
+    .card-section-grid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1.7rem;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .card {
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        padding: 1rem;
+    }
+
+    #contact-section {
+        margin: .5rem;
+        margin-bottom: 10rem;
+    }
+
+    #footer {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0;
+    }
+
+    .social-links {
+        width: 100%;
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    header {
+        height: 10rem;
+    }
+
+    .hero-wrapper {
+        height: 100%;
+        align-self: center;
+        justify-self: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } */
+
+    .hero-section {
+        width: 90%;
+    }
+
+    .profile-picture-container {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .nav-wrapper-left,
+    .nav-wrapper-right {
+        display: none;
+    }
+
+    .scroller-bottom,
+    .scroller-top {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* .contact-section {
+        width: 70%;
+        padding: 1.5rem;
+        margin: 0;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } */
+}
+
+@media only screen and (max-width: 450px) {
+    header {
+        height: 10rem;
+    }
+
+    .hero-wrapper {
+        height: 100%;
+    }
+
+    .hero-section {
+        width: 90%;
+    }
+
+    .profile-picture-container {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .nav-wrapper-left,
+    .nav-wrapper-right {
+        display: none;
+    }
+
+    .scroller-bottom,
+    .scroller-top {
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 }
